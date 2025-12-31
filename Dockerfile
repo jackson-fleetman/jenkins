@@ -11,7 +11,7 @@ USER root
 RUN jenkins-plugin-cli --plugins github:1.45.0 \
                                  workflow-aggregator:608.v67378e9d3db_1 \
                                  ws-cleanup:0.49 \
-                                 simple-theme-plugin:212.vf7742677e2f2 \
+                                 # simple-theme-plugin:212.vf7742677e2f2 \
                                  kubernetes:4398.vb_b_33d9e7fe23 \
                                  pipeline-stage-view:2.38 \
                                  github-branch-source:1917.v9ee8a_39b_3d0d 

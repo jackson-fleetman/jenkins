@@ -92,7 +92,9 @@ spec:
               value: -Djenkins.install.runSetupWizard=false
           ports:
             - name: http-port
-              containerPort: 8080
+              # Update from 8080 to 8082 as 8080 is used by Jenkins-from-Web-K8s and 8081 is used by Jenkins-from-Web-Container
+              containerPort: 8082
+              # containerPort: 8080
             - name: jnlp-port
               containerPort: 50000
           volumeMounts:
@@ -121,8 +123,11 @@ spec:
   type: NodePort
   ports:
     - name: ui
-      port: 8080
-      targetPort: 8080
+     # Update from 8080 to 8082 as 8080 is used by Jenkins-from-Web-K8s and 8081 is used by Jenkins-from-Web-Container
+      port: 8082
+      targetPort: 8082
+      # port: 8080
+      # targetPort: 8080
       nodePort: 31000
     - name: jnlp
       port: 50000

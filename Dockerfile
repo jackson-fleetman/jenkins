@@ -1,4 +1,7 @@
-from jenkins/jenkins:2.441-alpine-jdk21
+# Update Jenkins version to latest
+# FROM jenkins/jenkins:2.441-alpine-jdk21
+FROM jenkins/jenkins:2.528.3-alpine-jdk21
+
 USER root
 # Pipeline
 

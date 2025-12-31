@@ -14,7 +14,7 @@ RUN jenkins-plugin-cli --plugins github:1.45.0 \
                                  simple-theme-plugin:212.vf7742677e2f2 \
                                  kubernetes:4398.vb_b_33d9e7fe23 \
                                  pipeline-stage-view:2.38 \
-                                 github-branch-source:1925.v62fb_7ffb_08ce 
+                                 github-branch-source:1917.v9ee8a_39b_3d0d 
 # RUN jenkins-plugin-cli --plugins github:1.34.4 \
 #                                 workflow-aggregator:581.v0c46fa_697ffd \
 #                                 ws-cleanup:0.42 \
